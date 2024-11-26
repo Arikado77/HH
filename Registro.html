@@ -38,4 +38,46 @@
     <script src="js/Registro.js"></script>
     <script src="js/Interacciones.js"></script>
 </body>
+
+<script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+    // Obtener los valores de los campos del formulario
+    const nombre_cliente = document.getElementById('username').value;
+    const correo_cliente = document.getElementById('email').value;
+    const contraseña = document.getElementById('password').value;
+
+    // Crear un objeto con los datos del formulario
+    const clienteData = {
+        nombre_cliente,
+        correo_cliente,
+        contraseña
+    };
+
+    // Enviar los datos al servidor usando fetch
+    fetch('/Cliente', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(clienteData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message === 'Cliente registrado con éxito.') {
+            // Mostrar mensaje de éxito
+            document.getElementById('successMessage').classList.remove('hidden');
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error al registrar el cliente:', error);
+        alert('Hubo un error al registrar el cliente. Intenta nuevamente.');
+    });
+});
+
+</script>
+
 </html>

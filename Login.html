@@ -67,5 +67,57 @@
           </div>
  
     </body>
+
+    <script>
+      // Función para manejar el inicio de sesión
+function login() {
+  // Obtener los valores de los inputs
+  const username = document.getElementById("user").value;
+  const password = document.getElementById("password").value;
+
+  // Verificar si los campos están vacíos
+  if (!username || !password) {
+    alert("Por favor, completa ambos campos.");
+    return;
+  }
+
+  // Realizar la solicitud fetch
+  fetch("/Cliente", {
+    method: "POST", // Cambiar a POST si planeas enviar datos
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      username: username,
+      password: password,
+    }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Error en la respuesta del servidor");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      // Procesar la respuesta del servidor
+      if (data.success) {
+        alert("Inicio de sesión exitoso.");
+        window.location.href = "/dashboard"; // Redirigir a otra página
+      } else {
+        alert("Usuario o contraseña incorrectos.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error durante la autenticación:", error);
+      alert("Hubo un problema con el inicio de sesión.");
+    });
+}
+
+// Asignar la función al evento submit del formulario
+document.querySelector(".form").addEventListener("submit", (e) => {
+  e.preventDefault(); // Evitar el envío predeterminado del formulario
+  login(); // Llamar a la función de inicio de sesión
+});
+    </script>
     
 </html>

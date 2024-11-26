@@ -85,21 +85,21 @@ video{
     gap: 2em;
     position: relative;
     top: 20px;
+    transform: translateX(-100px);
 }
 
 .nav_links{
     color: #fff;
     text-decoration: none;
+    
 }
 
 .nav_menu{
-    margin-left: auto;
+    margin-left: 0;
     cursor: pointer;
-    display: none;
 }
 
 .nav.img{
-    display: block;
     width: 30px;
 }
 
@@ -743,17 +743,17 @@ video{
   /*Lenguaje Boton*/
 
 .en{
-    transform: translateX(781px);
+    transform: translateX(800px);
     justify-content: center;
 }
 
 .es{
-    transform: translateX(832px);
+    transform: translateX(850px);
     justify-content: center;
 }
 
 .imgworld{
-    transform: translateX(828px);
+    transform: translateX(835px);
     height: 22px;
     width: auto;
     position: relative;
@@ -768,7 +768,7 @@ video{
     height: 25px;
     background: #1D293F;
     border-radius: 25px;
-    transform: translateX(815px);
+    transform: translateX(820px);
 }
 
 .check:checked::after{
