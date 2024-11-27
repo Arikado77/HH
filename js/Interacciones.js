@@ -1,6 +1,6 @@
 function irLogin() 
 {
-    window.location.href = 'LogIn.html'; 
+    window.location.href = 'Login.html'; 
 }
 function irInicio(){
   window.location.href = 'Index.html';  
