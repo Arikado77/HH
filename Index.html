@@ -1,270 +1,366 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Style.css">
-    <link rel="stylesheet" href="../css/Normalize.css">
-    <link rel="shortcut icon" href="Assets/Happy House.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="shortcut icon" href="Assets/Happy House.png">
     <title>HappyHouse</title>
 </head>
-<body>
+<body>1
 
-    <video muted autoplay loop>
-        <source src="../Assets/Video-Fondo.mp4" type="video/mp4">
-    </video>
+    <video src="Assets/Video-Fondo.mp4" autoplay loop muted></video>
 
     <header class="hero" id="section-lobby">
         <nav class="nav container">
             <div class="nav_logo">
-                <span class=""><img class="logo" src="../Assets/LogoPNG.png"></span>
+                <span class=""><img class="logo" src="Assets/LogoPNG.png"></span>
                 <h2 class="nav_title">Happy House </h2>
             </div>
             <ul class="nav_link nav_link--menu">
                 <li class="nav_items">
-                    <a href="#section-lobby" class="nav_links">Home</a>
+                    <a href="#section-lobby" class="nav_links">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#section1" class="nav_links">Tips</a>
+                    <a href="#section1" class="nav_links">Consejos</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" onclick="irLogin()" class="nav_links">Login</a>
+                    <a href="Login.html" class="nav_links">Login</a>
                 </li>
-                <img src="../Assets/circlearrow.svg" class="nav_close">
+                <img src="Assets/circlearrow.svg" class="nav_close">
             </ul>
 
             <div class="nav_menu">
-                <img src="../Assets/galerarrow.svg" class="nav_img">
+                <img src="" class="nav_img">
             </div>
         </nav>
 
         <section class="hero_container container">
-            <h1 class="hero_title">Start Your Independence</h1>
-            <h2 class="hero_pragraph">You are in the right place!</h2>
-            <a href="../Login.html" class="cta">Get started now!</a>
+            <h1 class="hero_title">¿Quieres independizarte?</h1>
+            <h2 class="hero_pragraph">¡Estás en el lugar correcto!</h2>
+            <a href="Login.html" class="cta">¡Comienza ahora!</a>
         </section>
 
-        <span class="en">English/</span>
-        <span class="es">/Español</span>
-        <input type="checkbox" class="check" checked>
-        <img src="../Assets/worldarrow.svg" class="imgworld">
-            
+        <span class="en">English / Español</span>
+        <br>
+        <input type="checkbox" class="check">
+        <img src="Assets/worldarrow.svg" class="imgworld">
+
     </header>
 
     <main>
 
         <section class="container about">
-            <h2 class="container_subtitle">About Us</h2>
-            <p class="about_paragraph">At Happy House we believe that the beginning of a life 
-                Freelance should be an exciting, accessible and stress-free experience. 
-                complications. Therefore, our project is designed to accompany 
-                people who are creating their first home, offering practical solutions 
-                and personalized that adapt to your needs.
+            <h2 class="container_subtitle">Nosotros</h2>
+            <p class="about_paragraph">En Happy House creemos que el inicio de una vida 
+                independiente debe ser una experiencia emocionante, accesible y libre de 
+                complicaciones. Por eso, nuestro proyecto está diseñado para acompañar a 
+                las personas que están creando su primer hogar, ofreciendo soluciones prácticas 
+                y personalizadas que se adaptan a sus necesidades.
         </p>
         </section>
 
         <section class="knowledge">
             <div class="knowledge_container container">
                 <div class="knowledge_texts">
-                    <h2 class="knowledge_subtitle">Client List</h2>
+                    <h2 class="knowledge_subtitle">
+                        ¡Inicia ya!
+                    </h2>
+                    <div>
+                        <a class="knowledge_subtitle">"Inicia ya tu camino hacia una vida más organizada 
+                            y plena. No esperes más para empezar a tomar decisiones que mejoren tu bienestar, 
+                            tus finanzas y tu entorno. Da el primer paso hoy mismo, ¡y comienza a construir tu 
+                            futuro ahora!"
+                        </a>
+                        </div>
                 </div>
                 <figure class="knowledge_picture">
-                    <img src="../Assets/img1.jpg" class="knowledge_img">
+                    <img src="Assets/img1.jpg" class="knowledge_img">
                 </figure>
             </div>
             
         </section>
 
         <section class="container about">
-            <h2 class="subtitle">We have for you:</h2>
+            <h2 class="subtitle">Tenemos para ti:</h2>
             <div class="about_main">
                 <article class="about_icons">
-                    <img src="../Assets/herraarrow.svg" class="about_icon">
-                    <h3 class="about_title">Basics_Tools</h3>
+                    <img src="Assets/herraarrow.svg" class="about_icon">
+                    <h3 class="about_title">Básicos Herramientas</h3>
                 </article>
                 <article class="about_icons">
-                    <img src="../Assets/foodarrow.svg" class="about_icon">
-                    <h3 class="about_title">Basics_Food</h3>
+                    <img src="Assets/foodarrow.svg" class="about_icon">
+                    <h3 class="about_title">Básicos Comida</h3>
                 </article>
                 <article class="about_icons">
-                    <img src="../Assets/cleanarrow.svg" class="about_icon">
-                    <h3 class="about_title">Basics_Cleaning</h3>
+                    <img src="Assets/cleanarrow.svg" class="about_icon">
+                    <h3 class="about_title">Básicos Limpieza</h3>
                 </article>
                 <article class="about_icons">
-                    <img src="../Assets/profarrow.svg" class="about_icon">
-                    <h3 class="about_title">Professionals</h3>
+                    <img src="Assets/profarrow.svg" class="about_icon">
+                    <h3 class="about_title">Profesionales</h3>
                 </article>
                 <article class="about_icons">
-                    <img src="../Assets/moneyarrow.svg" class="about_icon">
-                    <h3 class="about_title">Finances</h3>
+                    <img src="Assets/moneyarrow.svg" class="about_icon">
+                    <h3 class="about_title">Finanzas</h3>
                 </article>
                 <article class="about_icons">
-                    <img src="../Assets/celarrow.svg" class="about_icon">
-                    <h3 class="about_title">Emergency Numbers</h3>
+                    <img src="Assets/celarrow.svg" class="about_icon">
+                    <h3 class="about_title">Números de Emergencia</h3>
                 </article>
             </div>
         </section>
 
         <section class="testimony" id="section1">
             <div class="testimony_container container">
-                <img src="../Assets/leftarrow.svg" class="testimony_arrow" id="before">
-
+                <img src="./Assets/leftarrow.svg" class="testimony_arrow" id="before">
+        
+                <!-- Testimonio 1 -->
                 <section class="testimony_body testimony_body--show" data-id="1">
                     <div class="testimony_texts">
-                        <h2 class="testimony_subtitle">Tip 1<span class="testimony_course"></span></h2>
-                        <p class="testimony_review">
-                            "Consider your savings system"
-                        </div>
-
+                        <h2 class="testimony_subtitle">Consejo 1<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Contempla tu sistema de ahorro"</p>
+                    </div>
                     <figure class="testimony_picture">
-                        <img src="../Assets/img4.jpg" class="testimony_img">
+                        <img src="./Assets/img00.jpg" class="testimony_img" alt="Imagen de consejo 1">
                     </figure>
                 </section>
-
+        
+                <!-- Testimonio 2 -->
                 <section class="testimony_body" data-id="2">
                     <div class="testimony_texts">
-                        <h2 class="testimony_subtitle">Tip 2<span class="testimony_course"></span></h2>
-                        <p class="testimony_review">
-                            "Focus on having what you truly need and not spending unnecessarily"
-                        </p>
+                        <h2 class="testimony_subtitle">Consejo 2<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Concéntrate en tener lo que necesites verdaderamente y no gastar innecesariamente"</p>
                     </div>
-
                     <figure class="testimony_picture">
-                        <img src="../Assets/img2.jpg" class="testimony_img">
+                        <img src="./Assets/img0.jpg" class="testimony_img" alt="Imagen de consejo 2">
                     </figure>
                 </section>
-
+        
+                <!-- Testimonio 3 -->
                 <section class="testimony_body" data-id="3">
                     <div class="testimony_texts">
-                        <h2 class="testimony_subtitle">Tip 3<span class="testimony_course"></span></h2>
-                        <p class="testimony_review">
-                            "Consider your insurance for major medical expenses"
-                        </p>
+                        <h2 class="testimony_subtitle">Consejo 3<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Contempla tu seguro de gastos médicos mayores"</p>
                     </div>
-
                     <figure class="testimony_picture">
-                        <img src="../Assets/img3.jpg" class="testimony_img">
+                        <img src="./Assets/img3.jpg" class="testimony_img" alt="Imagen de consejo 3">
                     </figure>
                 </section>
-
+        
+                <!-- Testimonio 4 -->
                 <section class="testimony_body" data-id="4">
                     <div class="testimony_texts">
-                        <h2 class="testimony_subtitle">Tip 4<span class="testimony_course"></span></h2>
-                        <p class="testimony_review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        <h2 class="testimony_subtitle">Consejo 4<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Organiza tu espacio para que todo tenga su lugar"</p>
                     </div>
-
                     <figure class="testimony_picture">
-                        <img src="../Assets/img3.jpg" class="testimony_img">
+                        <img src="./Assets/img2.jpg" class="testimony_img" alt="Imagen de consejo 4">
                     </figure>
                 </section>
-
+        
+                <!-- Testimonio 5 -->
                 <section class="testimony_body" data-id="5">
                     <div class="testimony_texts">
-                        <h2 class="testimony_subtitle">Tip 5<span class="testimony_course"></span></h2>
-                        <p class="testimony_review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        <h2 class="testimony_subtitle">Consejo 5<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Asegúrate de tener una red de apoyo, como amigos y familiares"</p>
                     </div>
-
                     <figure class="testimony_picture">
-                        <img src="../Assets/img3.jpg" class="testimony_img">
+                        <img src="./Assets/img4.jpg" class="testimony_img" alt="Imagen de consejo 5">
                     </figure>
                 </section>
-
-                <img src="../Assets/rigtharrow.svg" class="testimony_arrow" id="next">
+        
+                <!-- Testimonio 6 -->
+                <section class="testimony_body" data-id="6">
+                    <div class="testimony_texts">
+                        <h2 class="testimony_subtitle">Consejo 6<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Establece una rutina diaria para mantenerte organizado y enfocado"</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./Assets/img0.jpg" class="testimony_img" alt="Imagen de consejo 6">
+                    </figure>
+                </section>
+        
+                <!-- Testimonio 7 -->
+                <section class="testimony_body" data-id="7">
+                    <div class="testimony_texts">
+                        <h2 class="testimony_subtitle">Consejo 7<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"No tengas miedo de pedir ayuda cuando la necesites"</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./Assets/img000.jpg" class="testimony_img" alt="Imagen de consejo 7">
+                    </figure>
+                </section>
+        
+                <!-- Testimonio 8 -->
+                <section class="testimony_body" data-id="8">
+                    <div class="testimony_texts">
+                        <h2 class="testimony_subtitle">Consejo 8<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Invierte en ti mismo, tanto en educación como en bienestar personal"</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./Assets/img1.jpg" class="testimony_img" alt="Imagen de consejo 8">
+                    </figure>
+                </section>
+        
+                <!-- Testimonio 9 -->
+                <section class="testimony_body" data-id="9">
+                    <div class="testimony_texts">
+                        <h2 class="testimony_subtitle">Consejo 9<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Aprovecha los momentos de descanso para recargar energías"</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./Assets/img2.jpg" class="testimony_img" alt="Imagen de consejo 9">
+                    </figure>
+                </section>
+        
+                <!-- Testimonio 10 -->
+                <section class="testimony_body" data-id="10">
+                    <div class="testimony_texts">
+                        <h2 class="testimony_subtitle">Consejo 10<span class="testimony_course"></span></h2>
+                        <p class="testimony_review">"Mantén una mentalidad positiva y abierta ante los cambios"</p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="./Assets/img3.jpg" class="testimony_img" alt="Imagen de consejo 10">
+                    </figure>
+                </section>
+        
+                <img src="./Assets/rigtharrow.svg" class="testimony_arrow" id="next">
             </div>
         </section>
+        
       
         <section class="questions container">
-            <h2 class="subtitle">Our Sections
-                </h2>
+            <h2 class="subtitle">Nuestros Apartados</h2>
 
             <section class="questions_container">
                 <article class="questions_padding">
                     <div class="questions_answer">
-                        <h3 class="questions_title">Basics_Food
-                            <span class="questions__arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
+                        <h3 class="questions_title">Básicos Comida
+                            <span class="questions_arrow">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
                             </span>
                         </h3>
-
-                        <p class="questions_show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
+                        
+                        <ul class="questions_show">
+                            <p>Pan</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Leche</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Arroz</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Manzanas</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Atun</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                        </ul>
+                        
                     </div>
                 </article>
 
                 <article class="questions_padding">
                     <div class="questions_answer">
-                        <h3 class="questions_title">Basics_Tools
+                        <h3 class="questions_title">Básicos Herramientas
                             <span class="questions_arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
                             </span>
                         </h3>
 
-                        <p class="questions_show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
-                    </div>
-                </article>
-
-                <article class="questions_padding">
-                    <div class="questions_answer">
-                        <h3 class="questions_title">Basics_Cleaning 
-                            <span class="questions_arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
-                            </span>
-                        </h3>
-
-                    </div>
-                </article>
-
-                <article class="questions_padding">
-                    <div class="questions_answer">
-                        <h3 class="questions_title">Professionals
-                            <span class="questions_arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
-                            </span>
-                        </h3>
-
-                        <p class="questions_show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
-                    </div>
-                </article>
-
-                <article class="questions_padding">
-                    <div class="questions_answer">
-                        <h3 class="questions_title">Finances
-                            <span class="questions_arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
-                            </span>
-                        </h3>
-
-                        <p class="questions_show">To have this section available we need you to register or log in. 
-                            <a href="Login.html" class="cta2">Login</a></p>
+                        <ul class="questions_show">
+                            <p>Martillo</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Destornillador</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Llave Inglesa</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Taladro</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Sierra</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                        </ul>
 
                     </div>
                 </article>
 
                 <article class="questions_padding">
                     <div class="questions_answer">
-                        <h3 class="questions_title">Emergency numbers
+                        <h3 class="questions_title">Básicos Limpieza
                             <span class="questions_arrow">
-                                <img src="../Assets/downarrow.svg" class="questions_img">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
                             </span>
                         </h3>
 
-                        <p class="questions_show">'911'</p>
+                        <ul class="questions_show">
+                            <p>Detergente</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Desinfectante</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Escoba</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Jabon</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                            <p>Trapeador</p>
+                            <p>----------------------------------------------------------------------------------------------------------------------------</p>
+                        </ul>
+
+                    </div>
+                </article>
+
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">Profesionales
+                            <span class="questions_arrow">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
+                            </span>
+                        </h3>
+
+                        <p class="questions_show">Necesitas iniciar sesión para poder obtener este apartado.
+                            <a href="Login.html" class="cta2">Inicia Sesión</a></p>
+
+                        </div> 
+                    </article>
+
+                    </div>
+                </article>
+
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">Finanzas
+                            <span class="questions_arrow">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
+                            </span>
+                        </h3>
+
+                        <p class="questions_show">Necesitas iniciar sesión para poder obtener este apartado.
+                            <a href="Login.html" class="cta2">Inicia Sesión</a></p>
+
+                    </div>
+                </article>
+
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">Números de Emergencia
+                            <span class="questions_arrow">
+                                <img src="./Assets/downarrow.svg" class="questions_img">
+                            </span>
+                        </h3>
+
+                        <ul class="questions_show">
+                            <li>' 911 ' - - -> Número de emergencias en general.</li>  
+                            <br>
+                            <li>'060' - - -> Policía.</li>   
+                            <br>
+                            <li>'068' - - -> Bomberos.</li>
+                            <br>
+                            <li>'072' - - -> Atención del Gobierno de la Ciudad de México.</li>
+                            <br>
+                            <li>'089' - - -> Denuncias anónimas.</li>  
+                            <br>
+                            <li>'074' - - -> Atención para carreteras y peajes de CAPUFE (Caminos y Puentes Federales).</li>  
+                            <br>
+                            <li>'065' - - -> Cruz Roja Mexicana.</li> 
+                        </ul>
                     </div>
                 </article>
 
@@ -276,7 +372,7 @@
             <nav class="nav nav--footer">
                 <h2 class="footer_title">HappyHouse</h2>
                 <h3 class="footer_title">SiteWorx</h3>
-                <img class="logo2" src="../Assets/logoEmpresaPNG.png">
+                <img class="logo2" src="Assets/logoEmpresaPNG.png">
             </nav>
         </section>
 
@@ -292,14 +388,13 @@
                 <a href="#" class="socialContainer containerFour">
                   <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
                 </a>
-              </div>
+              </div> 
         </section>
     </footer>
-
-    </main>
-    <script src="../js/Interacciones.js"></script>
-    <script src="../js/Slider.js"></script>
-    <script src="../js/Questions.js"></script>
-    <script src="../js/app.js"></script>
+    
+    <script src="js/Interacciones.js"></script>
+    <script src="js/Slider.js"></script>
+    <script src="js/Questions.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
